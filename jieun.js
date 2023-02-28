@@ -22,7 +22,7 @@ headerDiv.style.cssText='position: absolute;width: 147px;height: 29px;left:141px
 mainDiv.style.cssText='position: absolute;width: 295px;height: 186px;left: 67px;top: 364px;font-style: normal;font-weight: 400;font-size: 12px;line-height: 15px;text-align: justify;color: #000000;'
 footDiv.style.cssText='position: absolute;width: 82px;height: 82px;left: 174px;top: 673px;background: #5A5A5A;border-radius: 41px;'
 
-
+//addeventlistenr추가 클릭하면 NightMode가 true->false->frue 바뀜
 let NightMode = true;
 root.addEventListener('click', function() {
     if (NightMode) {
