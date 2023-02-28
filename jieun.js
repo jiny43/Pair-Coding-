@@ -23,18 +23,19 @@ mainDiv.style.cssText='position: absolute;width: 295px;height: 186px;left: 67px;
 footDiv.style.cssText='position: absolute;width: 82px;height: 82px;left: 174px;top: 673px;background: #5A5A5A;border-radius: 41px;'
 
 
-let NightMode = false;
-//에드이벤트리스너로 클릭할 때 컬러 변경
+let NightMode = true;
 root.addEventListener('click', function() {
     if (NightMode) {
-        body.style.color ='black';
-        body.style.backgroundColor = 'white';
+        root.style.backgroundColor = 'white';
+        headerDiv.style.color='black';
+        mainDiv.style.color='black';
+        NightMode = false;
     } else {
         root.style.backgroundColor = 'black';
         headerDiv.style.color='white';
         mainDiv.style.color='white';
-        //root 영역 클릭하면 작동
-        }
-    });
+        NightMode = true;
+    }
+});
 
 
